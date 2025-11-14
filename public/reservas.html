@@ -1,1 +1,42 @@
-.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva – Reservas</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body id="pagina-reserva">
+  <main>
+    <h1>Formulario de reserva</h1>
+
+    <p id="mensaje-bienvenida"></p>
+
+    <form id="form-reserva">
+
+      <label for="fecha">Fecha y hora</label>
+      <input type="datetime-local" id="fecha" required>
+
+      <label for="recurso">Espacio a reservar</label>
+      <select id="recurso" required>
+        <option value="">Selecciona un recurso</option>
+        <option value="Biblioteca">Biblioteca</option>
+        <option value="Aula Informática">Aula de Informática</option>
+        <option value="SUM">SUM</option>
+        <option value="ATeca">ATeca</option>
+      </select>
+
+      <label for="unidades">Número de personas</label>
+      <input type="number" id="unidades" min="1" value="1" required>
+
+      <label for="comentarios">Comentarios</label>
+      <textarea id="comentarios" maxlength="200"></textarea>
+
+      <button type="submit" class="boton">Continuar</button>
+    </form>
+
+    <button id="cerrar-sesion" class="boton-secundario">Cerrar sesión</button>
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
