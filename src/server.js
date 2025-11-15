@@ -48,11 +48,11 @@ app.get('/', (req, res) => {
 app.get('/saludo', (req, res) => {
   res.send("<h1>¡Bienvenido!</h1>");
 });
-
+*/
 app.use((req, res) => {
   res.status(404).send("Error 404: página no encontrada");
 });
-*/
+
 
 // 6. app.listen de la AC4 (se mantiene tal cual)
 app.listen(3000, () => {
